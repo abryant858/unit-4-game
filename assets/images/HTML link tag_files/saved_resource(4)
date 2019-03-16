@@ -1,0 +1,31 @@
+
+var ftGUID_3379536="40917BBFA31EF3";
+var ftConfID_3379536="12875849";
+var ftParams_3379536="ftx=&fty=&ftadz=&ftscw=&ft_custom=4053494__22076717__4094539__106802850&ftOBA=1&ft_agentEnv=0&ft_referrer=https%3A%2F%2Fwww.w3schools.com%2Ftags%2Ftag_link.asp&ft_keyword=235556554&ft_section=45271585027901532810200198408625819096%7C%7C235556554&cachebuster=312677.5573130323";
+var ftKeyword_3379536="23";
+var ftCustom_3379536="4053494__22076717__4094539__106802850";
+var ftSection_3379536="45271585027901532810200198408625819096||235556554";
+var ftSegment_3379536="w2c";
+var ftSegmentList_3379536=[{s:'w2c'}];
+var ftRuleMatch_3379536="00011000";
+var ftTimestamp_3379536="1552693450";
+var ftGeoC2_3379536="us";
+var ftGeoState_3379536="tn";
+var ftGeoCity_3379536="nashville";
+var ftISP_3379536="att internet services";
+var ftSpeed_3379536="xdsl";
+var ftDMA_3379536="659";
+var ftLong_3379536="-86.8247";
+var ftLat_3379536="36.094";
+var ftPostal_3379536="37215";
+var ftTimeZone_3379536="-500";
+var ftMobileCarrier_3379536="";
+var ftImp3379536 = {};
+ftImp3379536.privacy = "x";
+ftImp3379536.guidAge = "0";
+ftImp3379536.impID = "C782E012-CE2C-0125-B85E-C5201FAE4305";
+ftImp3379536.duid = "FT:40917BBFA31EF3";
+ftImp3379536.ft_tpplid = "";
+ftImp3379536.ft_c = {};
+
+document.write('<scr'+'ipt src="https://cdn.flashtalking.com/xre/337/3379536/2534482/js/j-3379536-2534482.js" id="ftscript_m3379536" name="ftscript_m3379536"></scr'+'ipt>');

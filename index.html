@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
     <!-- Added a link to our external stylesheet-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    
 
 </head>
 <body>
@@ -24,20 +26,28 @@
             <h2>Crystal Collector</h2>
             
             <div class="button-holder">
-                <button id="button-1" class="btn btn-primary gem1" value=0><span>c1</span></button>
-                <button id="button-2" class="btn btn-primary gem2" value=0><span>c2</span></button>
-                <button id="button-3" class="btn btn-primary gem3" value=0><span>c3</span></button>
-                <button id="button-4" class="btn btn-primary reset" value=0><span>c4</span></button>
+                <input type="image" id="button-1" style="height:100px;width:100px;" src="assets/images/diamond.jpg" />
+                <input type="image" id="button-2" style="height:100px;width:100px;" src="assets/images/pear.png" />
+                <input type="image" id="button-3" style="height:100px;width:100px;" src="assets/images/ruby.jpg" />
+                <input type="image" id="button-4" style="height:100px;width:100px;" src="assets/images/sapphire.jpg" />
+                <button id="button-reset" class="btn btn-primary reset"><span>RESET</span></button>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-8">
-            <p>Random Number</p>
-            <h1 id="numSum"></h1>
+            <p>Wins</p>
+            <h1 id="win"></h1>
+            <p>Losses</p>
+            <h1 id="loss"></h1>
         </div>
     </div>
-
+    <div class="row">
+        <div class="col-md-8">
+            <p>Random Number</p>
+            <h1 id="number"></h1>
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-8">
             <p>This is your score</p>
@@ -46,48 +56,7 @@
     </div>
 </div>
 
-<script type="text/javascript">
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 
-    
-    $(document).ready(function() {
-        
-        var ranNum = getRandomArbitrary()
-        var gemNumArray = []
-        var theirNum
-        var button1
-        var button2
-        var button3
-        var button4
-
-        //Create random number to match
-        function getRandomArbitrary() {
-        return Math.floor(Math.random() * (120 - 19)) + 19;
-        }
-        console.log(getRandomArbitrary())
-
-        //Create random numbers for the gems
-        function getRanGemNum() {
-            for(var i = 1; i<=4; i++) {
-            var random = ranMath.floor(Math.random() * (12 - 1)) + 1;
-            gemNumArray.push(random)
-            }
-            
-        }
-        console.log(getRanGemNum())
-
-        $("#button-1").on("click", function() {
-            theirNum = getRandomArbitrary() + theirNum
-        }
-
-
-    
-//  $("#random-number").text(ranArray.join(' '));
-
-
-        
-
-
-    });
-</script>    
 </body>
 </html>

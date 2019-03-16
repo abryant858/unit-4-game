@@ -1,0 +1,21 @@
+
+var ftGUID_3617079="40917BBFA31EF3";
+var ftConfID_3617079="0";
+var ftParams_3617079="ftx=&fty=&ftadz=&ftscw=&ft_custom=&ftOBA=1&ft_ifb=1&ft_domain=www.w3schools.com&ft_agentEnv=0&ft_referrer=https%3A%2F%2Fwww.w3schools.com%2Ftags%2Ftag_link.asp&ft_section=__45271585027901532810200198408625819096&cachebuster=383004.0598614737";
+var ftKeyword_3617079="";
+var ftCustom_3617079="";
+var ftSection_3617079="__45271585027901532810200198408625819096";
+var ftSegment_3617079="w2c";
+var ftSegmentList_3617079=[{s:'w2c'}];
+var ftRuleMatch_3617079="0";
+var ftTimestamp_3617079="1552693445";
+var ftImp3617079 = {};
+ftImp3617079.privacy = "x";
+ftImp3617079.guidAge = "0";
+ftImp3617079.impID = "451DFA86-6827-57CB-A218-057C4026EFCC";
+ftImp3617079.duid = "FT:40917BBFA31EF3";
+
+ftImp3617079.ft_tpplid = "";
+ftImp3617079.ft_c = {};
+
+document.write('<scr'+'ipt src="https://cdn.flashtalking.com/xre/361/3617079/2514407/js/j-3617079-2514407.js" id="ftscript_m3617079" name="ftscript_m3617079"></scr'+'ipt>');

@@ -1,0 +1,646 @@
+
+/* ==================================================================
+CSS BASE RESET
+===================================================================*/
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    font-family: sans-serif;
+    line-height:1;
+    background-color: grey;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+div {
+      position: absolute;
+}
+
+
+/*------- Calling Spongecell hosted Comcast Fonts --------*/
+@font-face {
+    font-family : 'XFINITYStandardTT-Thin';
+    src         : url("https://s3.amazonaws.com/assets.spongecell.com/assets/19304/original/68f8e04978274091c7e6a976542a8ec97eee679e.woff2") format("woff2"),
+    url("https://s3.amazonaws.com/assets.spongecell.com/assets/19305/original/fcd4f2198bddddd5175dd3d169a3388de84a8e7d.woff") format("woff"),
+    url("https://s3.amazonaws.com/assets.spongecell.com/assets/19281/original/aa7d91e3382f967545ca35bbb60551aaa5f83719.ttf") format("truetype");
+    font-weight : 100;
+    font-style  : normal;
+}
+
+@font-face {
+    font-family : 'XFINITYStandardTT-Bold';
+    src         : url("https://s3.amazonaws.com/assets.spongecell.com/assets/19286/original/bf2f2b3424a5148dfa724c2fdfb63d7f5d3b61c4.woff2") format("woff2"),
+    url("https://s3.amazonaws.com/assets.spongecell.com/assets/19287/original/e47e07c11abfd771eb540bb9e07e9fec9e119c72.woff") format("woff"),
+    url("https://s3.amazonaws.com/assets.spongecell.com/assets/19272/original/ed356a21dc6474b5ae9b308808995af6ea4551f7.ttf") format("truetype");
+    font-weight : 700;
+    font-style  : normal;
+}
+
+@font-face {
+    font-family : 'XFINITYStandardTT';
+    src         : url("https://s3.amazonaws.com/assets.spongecell.com/assets/19308/original/6c42a98cfc6fa0c435b36f2a42509d71ccef627c.woff2") format("woff2"),
+    url("https://s3.amazonaws.com/assets.spongecell.com/assets/19309/original/9c8b95b41012f79de6dff19b5722e4ceba3b98b9.woff") format("woff"),
+    url("https://s3.amazonaws.com/assets.spongecell.com/assets/19283/original/4b519c62d8912d01963a2179b2262b7fd093a8c0.ttf") format("truetype");
+    font-weight : 400;
+    font-style  : normal;
+}
+
+@font-face {
+    font-family : 'XFINITYStandardTT-Medium';
+    src         : url("https://s3.amazonaws.com/assets.spongecell.com/assets/19300/original/48c7e9affb0f33ae2050766b308832be99b9521c.woff2") format("woff2"),
+    url("https://s3.amazonaws.com/assets.spongecell.com/assets/19301/original/3ad0668f0994cb844ccd7824c6f970068925198c.woff") format("woff"),
+    url("https://s3.amazonaws.com/assets.spongecell.com/assets/19279/original/8674ef4564ad507eaaa2c5dff14345c9181899bf.ttf") format("truetype");
+    font-weight : 500;
+    font-style  : normal;
+}
+
+@font-face {
+    font-family : 'XFINITYStandardTT-MediumItalic';
+    src         : url("https://s3.amazonaws.com/assets.spongecell.com/assets/19302/original/8da4afd258ec077cc55c18d76dae0a5ed0f778bc.woff2") format("woff2"),
+    url("https://s3.amazonaws.com/assets.spongecell.com/assets/19303/original/3fbcf6a04efa0d8393c9adbc44638f9c46e11ba7.woff") format("woff"),
+    url("https://s3.amazonaws.com/assets.spongecell.com/assets/19280/original/5aa775a6da8c6068572bc798038dcded2dad65d0.ttf") format("truetype");
+    font-weight : 500;
+    font-style  : italic;
+}
+
+@font-face {
+    font-family : 'XFINITYStandardTT-Light';
+    src         : url("https://s3.amazonaws.com/assets.spongecell.com/assets/19296/original/beeacad9011922c7031fe837cdf667ea76c960b0.woff2") format("woff2"),
+    url("https://s3.amazonaws.com/assets.spongecell.com/assets/19297/original/a6e7996a68a9983dc83e5122d44ecad4fe1b4715.woff") format("woff"),
+    url("https://s3.amazonaws.com/assets.spongecell.com/assets/19277/original/b2b50684d518d03f3495943c45107c480b316be3.ttf") format("truetype");
+    font-weight : 300;
+    font-style  : normal;
+}
+
+@font-face {
+    font-family : 'XFINITYStandardTTCond-Medium';
+    src         : url("https://s3.amazonaws.com/assets.spongecell.com/assets/19312/original/c92c79a86b2b54bde3fe6d11cdd32a70f954c510.woff2") format("woff2"),
+    url("https://s3.amazonaws.com/assets.spongecell.com/assets/19313/original/0fc18abd6d2c72b82ebe3acfc84e2cc6bad984e8.woff") format("woff"),
+    url("https://s3.amazonaws.com/assets.spongecell.com/assets/19285/original/210731351d2689a6ab491c73b860b2a8edaddfa4.ttf") format("truetype");
+    font-weight : 500;
+    font-style  : normal;
+}
+
+
+/* ---------------------------------- Font Style Classses ---------------------------------- */
+.xsn { font-family : 'XfinityStandardTT'; font-style: normal; font-weight : 400;}
+
+.xst { font-family : 'XFINITYStandardTT-Thin'; font-style:normal; font-weight: 100;}
+
+.xsb { font-family : 'XFINITYStandardTT-Bold'; font-style:normal; font-weight: 700; }
+
+.xsm { font-family : 'XFINITYStandardTT-Medium'; font-style:normal; font-weight: 500; }
+
+.xsl { font-family : 'XFINITYStandardTT-Light'; font-style:normal; font-weight: 300;}
+
+.xsc { font-family : 'XFINITYStandardTTCond-Medium'; font-style: normal; font-weight: 500;}
+
+.xsi { font-family : 'XFINITYStandardTT-MediumItalic'; font-style: italic; font-weight: 500;}
+
+.lhx2 { line-height: 2; }
+.lhx05 { line-height: 0.5; }
+.lhx08 { line-height: 0.8; }
+
+.size12 {font-size: 12px;}
+.size8 {font-size: 8px;}
+
+.styleItalic {font-style: italic;}
+
+
+
+
+/* ==================================================================
+BANNER STYLES
+===================================================================*/
+
+#container {
+border: 1px solid;
+box-sizing: border-box;
+    width: 728px;
+    height: 90px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    background: #f2f2f2;
+    overflow: hidden;
+    font-size: 20px;
+    color: black;
+}
+
+#whiteBG{
+    background-size: 100% 100%;
+    background-color: white;
+    width: 728px;
+    height: 90px;
+    top:0px;
+    left:0px;
+}
+
+#grey_patch_01 {
+    background: url('patch_01.svg') no-repeat;
+    width: 748px;
+    height: 90px;
+    top:0px;
+    left:0px;
+    z-index: 12;
+}
+
+#grey_patch_02 {
+    background: url('patch_02.svg') no-repeat;
+    width: 728px;
+    height: 135px;
+    top:0px;
+    left:0px;
+    z-index: 12;
+}
+
+#grey_patch_03 {
+    background: url('patch_02.svg') no-repeat;
+    width: 728px;
+    height: 135px;
+    top:0px;
+    left:0px;
+    z-index: 12;
+}
+
+#grey_patch_04 {
+    background: url('patch_02.svg') no-repeat;
+    width: 728px;
+    height: 135px;
+    top:0px;
+    left:0px;
+    z-index: 12;
+}
+
+#grey_patch_04 {
+    background: url('patch_02.svg') no-repeat;
+    width: 728px;
+    height: 135px;
+    top:0px;
+    left:0px;
+    z-index: 12;
+}
+
+/* Frame_01*/
+#frame1Mask { /* for centering copy vertically */
+    width: 728px;
+    height: 90px;
+    overflow: hidden;
+    left: 0;
+}
+
+#frame1Image_728x90 {
+    position: absolute;
+    width: 728px;
+    height: 90px;
+    top:0px;
+    left:0px;
+}
+
+
+#logo_728x90 {
+    width: 71px;
+    height: 23px;
+    top: 11px;
+    right: 12px;
+    position: absolute;
+    z-index: 14;
+}
+
+
+/* Frame_02*/
+#frame2Mask { /* for centering copy vertically */
+    width: 728px;
+    height: 90px;
+    overflow: hidden;
+    left: 0;
+}
+#frame2CopyHolder { /* for centering copy vertically */
+    top: 0px;
+    left:  0px;
+    width: 585px;
+    height: 90px;
+    display: table;
+    position: absolute;
+}
+
+
+#frame2Copy_728x90 {
+    position: relative;
+    text-align:center;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1.3;
+    letter-spacing: 0px;
+    padding: 0px 12px;
+    font-size: 25px;
+    width: 160px;
+}
+
+/* Frame_03*/
+#frame3Mask { /* for centering copy vertically */
+    width: 728px;
+    height: 90px;
+    overflow: hidden;
+    left: 0;
+}
+#frame3CopyHolder { /* for centering copy vertically */
+    top: 0px;
+    left: 0;
+    width: 585px;
+    height: 90px;
+    display: table;
+    position: absolute;
+}
+
+#frame3disclaimerHolder { /* for centering copy vertically */
+    bottom: 0px;
+    width: 170px;
+    left:  420px;
+    height: 32px;
+    display: table;
+    position: absolute;
+}
+
+
+#frame3Copy_728x90 {
+    position: relative;
+    text-align: right;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1.3;
+    letter-spacing: .2px;
+    padding-right: 343px;
+    font-size: 16px;
+    width: 110px;
+}
+
+#frame3disclaimer_728x90 {
+    position: relative;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: .9;
+    letter-spacing: .5px;
+    padding: 0px 5px;
+    font-size: 8.4px;
+    font-style: italic;
+    width: 210px;
+}
+
+#frame3Image_728x90 {
+    position: absolute;
+    width: 188px;
+    height: 90px;
+    top:0px;
+    left:246px;
+    z-index: 4;
+}
+
+/* Frame_04*/
+#frame4Mask { /* for centering copy vertically */
+    width: 728px;
+    height: 90px;
+    overflow: hidden;
+    right: 0;  
+}
+
+#frame4CopyHolder { /* for centering copy vertically */
+    top: 0px;
+    left: 0;
+    width: 585px;
+    height: 90px;
+    display: table;
+    position: absolute;
+}
+
+
+#frame4Copy_728x90 {
+    position: relative;
+    text-align: right;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1.3;
+    letter-spacing: .2px;
+    padding-right: 343px;
+    font-size: 16px;
+    width: 170px;
+}
+
+#frame4Image_728x90 {
+    position: absolute;
+    width: 150px;
+    height: 90px;
+    top:0px;
+    left:269px;
+    z-index: 4;
+}
+
+/* EndFrame*/
+#endframeMask { /* for centering copy vertically */
+    width: 728px;
+    height: 90px;
+    overflow: hidden;
+    right: 0;
+}
+
+#endFrameCopyHolder { /* for centering copy vertically */
+    top: 0px;
+    left:  25px;
+    height: 90px;
+    display: table;
+    position: relative;
+}
+
+#endFrameHeader_728x90 {
+    position: relative;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1.3;
+    letter-spacing: 0px;
+/*    padding: 10px 0px;*/
+    font-size: 16px;
+}
+
+
+/*End frame Offer*/
+#endFrameOffer{
+    position: absolute;
+    width: 160px;
+    height: 100px;
+    top: 6px;
+    left: 160px;
+    z-index: 12; 
+}
+
+#endFramePackage{
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    top: 0px;
+    left: 5px;
+    float: left;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: .3px;
+    z-index: 12;    
+}
+
+#symbol{
+    position: relative;    
+    left: 14px;
+    top: 11px;
+    float: left;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing : 0.4px;
+    margin-right: 20px;
+    z-index: 12; 
+}
+#price{
+    position: relative;
+    top: 5px;
+    float: left;
+    font-size: 45px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    margin-left: -6px;
+    z-index: 12; 
+}
+
+#rightContent {
+    position: relative;
+    float: left;
+    margin-left: 1px;
+}
+
+#cents {
+    position: relative;
+    top: 18px;
+    width: 55px;
+    font-size: 9px;
+}
+
+#term{
+    position: absolute; 
+    width: 50px;
+    top: 27px;
+    font-size: 9px;
+    line-height: 11px;
+    text-align: left;
+    z-index: 12; 
+}
+
+#disclaimer{
+    position: relative;
+    text-align: center;
+    width: 150px;
+    float: left;
+    left: 0px;
+    font-size: 9px;
+    line-height: 10px;
+    margin-top: 3px;
+    margin-left: 5px;
+    z-index: 12; 
+}
+
+#boltOn_728x90 {
+    position: absolute;
+    text-align: right;
+    width: 90px;
+    top: 35px;
+    right: 130px;
+    font-size: 9px;
+    line-height: 12px;
+    letter-spacing : -.4px;
+    z-index: 13; 
+}
+
+#endFrameAltCopyHolder { /* for centering copy vertically */
+    top: 0px;
+    left: 305px;
+    width: 180px;
+    height: 90px;
+    display: table;
+    position: absolute;
+
+}
+
+#endFrameAltCopy_728x90{
+    position: relative;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 1.3;
+    z-index: 11;  
+}
+
+#endFrameIconCopyHolder { /* for centering copy vertically */
+    position: absolute;
+    width: 160px;
+    height: 100px;
+    top: 0px;
+    left: 323px;
+    z-index: 11; 
+}
+
+#endFrameIconCopy_728x90{
+    position: absolute;
+    text-align: center;
+    width: 126px;
+    top: 62px;
+    left: 8px;
+    font-size: 9px;
+    line-height: 11px;
+    z-index: 11;  
+}
+
+#EndFrameIcon_728x90 {
+    position: absolute;
+    width: 54px;
+    height: 52px;
+    top: 6px;
+    left: 45px;
+    z-index: 4;
+}
+
+#phoneNumber{
+    width: 160px;
+    top: 5px;
+    left: 438px;
+    font-size: 11px;
+    position:absolute;
+    text-align: right;
+    color: #1d261e;
+    z-index: 16;
+}
+
+/*CTA*/
+
+#ctaBg {
+    bottom: 9px;
+    right: 13px;
+    width: 98px;
+    height: 28px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color:#009ddb;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(204, 204, 204, 0), rgba(255, 255, 255, 0.5), rgba(204, 204, 204, 0));
+    background-position: -100px 0;
+    z-index: 16;
+}
+
+#cta {
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+    color: white;
+    white-space: nowrap;
+    top: 8px;
+    padding: 0;
+}
+
+/*------------------ Classes ------------------- */
+.displayNoneClass{
+    display: none;
+}
+
+ft-dynamic img{ all: unset; width: inherit};
